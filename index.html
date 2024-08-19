@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador da Evê</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagens/logo alura.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main class="principal">
+        <header>
+            <img class="logoAlura" src="imagens/logo alura.png" alt="logo da alura">
+        </header>
+       <div id="container-input">
+            <div class="input">
+                <textarea id="input-text" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+                <p class="informacao"></p><img src="./imagens/exclamacao-circulo.png">Apenas letras minúsculas e sem acento.</p>
+            </div>
+           <div id="output">
+            <img class="output-img" src="./imagens/Boneco.png" alt="boneco com lupa">
+            <h2 class="mensagem">Nenhuma mensagem encontrada</h2>
+            <span class="mensagem-subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</span>
+        </div>    
+    </div>
+
+    <div class="botoes">
+        <button id="btn-cripto" onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+        <button id="btn-descripto" onclick="descriptografar()"  class="btn-descriptografar">Descriptografar</button>
+        <button id="btn-copiar" onclick="copiar()">Copiar</button>
+    </div>
+   </main>
+   <footer class="rodape">
+    <h6> 2024 - Desenvolvido por <a class="rodape-link" href="https://evelinne-portifolio.vercel.app/index.html"> Evelinne Oliveira</a> </h6>  
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
